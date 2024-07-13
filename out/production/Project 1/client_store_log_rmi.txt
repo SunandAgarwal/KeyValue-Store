@@ -1,0 +1,79 @@
+2024-06-19 20:09:07.276 - Request RMI: PUT Usa Nyc
+2024-06-19 20:09:07.284 - Response RMI: Put successful
+2024-06-19 20:09:07.284 - Request RMI: PUT India Delhi
+2024-06-19 20:09:07.284 - Response RMI: Put successful
+2024-06-19 20:09:07.284 - Request RMI: PUT Greece Athens
+2024-06-19 20:09:07.285 - Response RMI: Put successful
+2024-06-19 20:09:07.285 - Request RMI: PUT Spain Madrid
+2024-06-19 20:09:07.285 - Response RMI: Put successful
+2024-06-19 20:09:07.285 - Request RMI: PUT Germany Berlin
+2024-06-19 20:09:07.285 - Response RMI: Put successful
+2024-06-19 20:09:07.286 - Request RMI: PUT England London
+2024-06-19 20:09:07.286 - Response RMI: Put successful
+2024-06-19 20:09:15.392 - Request RMI: PUT Usa Nyc
+2024-06-19 20:09:15.399 - Response RMI: Put successful
+2024-06-19 20:09:15.399 - Request RMI: PUT India Delhi
+2024-06-19 20:09:15.400 - Response RMI: Put successful
+2024-06-19 20:09:15.400 - Request RMI: PUT Greece Athens
+2024-06-19 20:09:15.400 - Response RMI: Put successful
+2024-06-19 20:09:15.400 - Request RMI: PUT Spain Madrid
+2024-06-19 20:09:15.401 - Response RMI: Put successful
+2024-06-19 20:09:15.401 - Request RMI: PUT Germany Berlin
+2024-06-19 20:09:15.401 - Response RMI: Put successful
+2024-06-19 20:09:15.401 - Request RMI: PUT England London
+2024-06-19 20:09:15.401 - Response RMI: Put successful
+2024-06-19 20:09:32.621 - Request RMI: PUT Usa Nyc
+2024-06-19 20:09:32.628 - Response RMI: Put successful
+2024-06-19 20:09:32.628 - Request RMI: PUT India Delhi
+2024-06-19 20:09:32.628 - Response RMI: Put successful
+2024-06-19 20:09:32.628 - Request RMI: PUT Greece Athens
+2024-06-19 20:09:32.629 - Response RMI: Put successful
+2024-06-19 20:09:32.629 - Request RMI: PUT Spain Madrid
+2024-06-19 20:09:32.630 - Response RMI: Put successful
+2024-06-19 20:09:32.630 - Request RMI: PUT Germany Berlin
+2024-06-19 20:09:32.630 - Response RMI: Put successful
+2024-06-19 20:09:32.630 - Request RMI: PUT England London
+2024-06-19 20:09:32.630 - Response RMI: Put successful
+2024-06-19 20:09:42.638 - Request RMI: get usa
+2024-06-19 20:09:42.649 - Response RMI: Key not found!
+2024-06-19 20:09:48.840 - Request RMI: GET Usa
+2024-06-19 20:09:48.842 - Response RMI: Nyc
+2024-06-19 20:09:59.475 - Request RMI: PUT Brazil Rio
+2024-06-19 20:09:59.477 - Response RMI: Put successful
+2024-06-19 20:10:03.993 - Request RMI: GET Brazil
+2024-06-19 20:10:04.001 - Response RMI: Rio
+2024-06-19 20:10:08.769 - Request RMI: Delete Usa
+2024-06-19 20:10:08.777 - Response RMI: Delete successful
+2024-06-19 20:10:11.613 - Request RMI: Get Usa
+2024-06-19 20:10:11.616 - Response RMI: Key not found!
+2024-06-19 20:10:15.280 - Request RMI: Get India
+2024-06-19 20:10:15.287 - Response RMI: Delhi
+2024-06-19 20:10:19.206 - Request RMI: Put India Mumbai
+2024-06-19 20:10:19.207 - Response RMI: Put successful
+2024-06-19 20:10:24.223 - Request RMI: Get India
+2024-06-19 20:10:24.228 - Response RMI: Mumbai
+2024-06-19 20:10:28.142 - Request RMI: Delete India
+2024-06-19 20:10:28.146 - Response RMI: Delete successful
+2024-06-19 20:10:31.733 - Request RMI: Get India
+2024-06-19 20:10:31.737 - Response RMI: Key not found!
+2024-06-19 20:10:40.149 - Request RMI: Get Greece
+2024-06-19 20:10:40.155 - Response RMI: Athens
+2024-06-19 20:10:47.507 - Request RMI: Put Greece Xyz
+2024-06-19 20:10:47.510 - Response RMI: Put successful
+2024-06-19 20:10:52.222 - Request RMI: Get Greece
+2024-06-19 20:10:52.227 - Response RMI: Xyz
+2024-06-19 20:10:54.860 - Client is shutting down
+2024-06-19 20:11:39.387 - Request RMI: Get Greece
+2024-06-19 20:11:39.399 - Response RMI: Xyz
+2024-06-19 20:11:44.672 - Client is shutting down
+2024-06-19 20:11:55.192 - Request RMI: PUT Usa SF
+2024-06-19 20:11:55.196 - Response RMI: Put successful
+2024-06-19 20:11:57.712 - Request RMI: Get Usa
+2024-06-19 20:11:57.714 - Response RMI: SF
+2024-06-19 20:12:01.681 - Request RMI: Delete Usa
+2024-06-19 20:12:01.684 - Response RMI: Delete successful
+2024-06-19 20:12:04.053 - Request RMI: Get Usa
+2024-06-19 20:12:04.055 - Response RMI: Key not found!
+2024-06-19 20:12:07.031 - Request RMI: Delete Usa
+2024-06-19 20:12:07.033 - Response RMI: Key not found!
+2024-06-19 20:12:09.352 - Client is shutting down

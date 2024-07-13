@@ -1,0 +1,35 @@
+Assignment Overview:
+The purpose of this assignment is to implement a robust client-server application capable of handling
+RMI connections. The assignment aims to implement a key-value store server that
+can process GET, PUT, and DELETE commands from clients over Java RMI.
+The client application should be resilient to server failures and unresponsiveness, utilizing a
+timeout mechanism to handle such scenarios gracefully and alerting the user. Additionally, the client should log all
+server timeout incidents with precise timestamps to facilitate troubleshooting.
+From what I understand, the scope of the assignment involves designing and implementing multi-threaded
+server capabilities. Emphasis is placed on ensuring robust communication, error handling, and
+logging mechanisms to create a reliable and maintainable distributed system. The server should be
+able to handle requests from multiple clients simultaneously, thereby handling mutual exclusion
+as well. The server is using thread pools to handle these concurrent requests.
+
+Technical Impression:
+Working on this assignment provided a comprehensive understanding of the complexities involved
+in developing robust client-server applications using Java RMI. Transitioning from using sockets
+to establishing RPC communication using Java RMI had its own challenges, such as understanding
+how the registry works and using interfaces for remote objects. This task involved delving into
+distributed systems topics such as registry lookup, remote binding and using interfaces.
+
+One of the challenges was ensuring thread safety to handle concurrent requests from clients
+to the server. Using thread pools in the server maintained the concept of mutual exclusion via
+synchronization, so that consistency is upheld in the ConcurrentHashMap store. Another level of
+complexity was added when timeouts were implemented to ensure that clients don't wait for long.
+
+This process involved thorough logging mechanisms to understand the complete flow of requests and
+responses made by clients, even though they may not be in the same order because of different
+threads. Exception handling was also implemented so that the server or the client do not crash
+and exit gracefully when errored.
+
+A practical use case for this client-server application would be in a distributed caching system,
+where the server acts as a cache store for frequently accessed data, and multiple clients
+such as web applications may read and update the cache concurrently.
+This system can significantly improve performance and reduce the load on a central database by distributing data storage and
+retrieval operations.
