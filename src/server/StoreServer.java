@@ -22,6 +22,7 @@ public class StoreServer {
    * This method sets up the configuration before start of the server sockets.
    */
   private void setupConfig(int rmiPort) throws IOException {
+    // Setup log writer
     this.logWriter = new PrintWriter(new FileWriter("server_store_log_rmi.txt", true), true);
 
     try {

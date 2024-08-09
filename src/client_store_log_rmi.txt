@@ -1,69 +1,64 @@
-2024-07-20 17:29:23.234 - Connected to RMI server at localhost:1234
-2024-07-20 17:29:23.243 - Connected to RMI server at localhost:1235
-2024-07-20 17:29:23.246 - Connected to RMI server at localhost:1236
-2024-07-20 17:29:23.248 - Connected to RMI server at localhost:1237
-2024-07-20 17:29:23.250 - Connected to RMI server at localhost:1238
-2024-07-20 17:29:23.261 - Prepopulate PUT Usa Nyc - Response: Put successful
-2024-07-20 17:29:23.261 - Prepopulate PUT Spain Madrid - Response: Put successful
-2024-07-20 17:29:23.262 - Prepopulate PUT Germany Berlin - Response: Put successful
-2024-07-20 17:29:23.261 - Prepopulate PUT India Delhi - Response: Put successful
-2024-07-20 17:29:23.261 - Prepopulate PUT Greece Athens - Response: Put successful
-2024-07-20 17:29:23.262 - Prepopulate PUT England London - Response: Put successful
-2024-07-20 17:29:29.660 - Connected to RMI server at localhost:1235
-2024-07-20 17:29:29.670 - Connected to RMI server at localhost:1236
-2024-07-20 17:29:29.672 - Connected to RMI server at localhost:1237
-2024-07-20 17:29:29.674 - Connected to RMI server at localhost:1238
-2024-07-20 17:29:29.683 - Prepopulate PUT Usa Nyc - Response: Put successful
-2024-07-20 17:29:29.683 - Prepopulate PUT Germany Berlin - Response: Put successful
-2024-07-20 17:29:29.683 - Prepopulate PUT India Delhi - Response: Put successful
-2024-07-20 17:29:29.683 - Prepopulate PUT Greece Athens - Response: Put successful
-2024-07-20 17:29:29.683 - Prepopulate PUT Spain Madrid - Response: Put successful
-2024-07-20 17:29:29.684 - Prepopulate PUT England London - Response: Put successful
-2024-07-20 17:29:42.897 - Request: GET Usa
-2024-07-20 17:29:42.906 - Response: Nyc
-2024-07-20 17:29:48.053 - Request: GET Aus
-2024-07-20 17:29:48.056 - Response: Key not found!
-2024-07-20 17:29:55.444 - Request: PUT Aus Sydney
-2024-07-20 17:29:55.453 - Response: Put successful
-2024-07-20 17:30:00.169 - Request: GET Aus
-2024-07-20 17:30:00.176 - Response: Sydney
-2024-07-20 17:30:12.925 - Request: DELETE India
-2024-07-20 17:30:12.931 - Response: Delete successful
-2024-07-20 17:30:17.357 - Request: GET India
-2024-07-20 17:30:17.360 - Response: Key not found!
-2024-07-20 17:30:21.571 - Request: GET India
-2024-07-20 17:30:21.576 - Response: Key not found!
-2024-07-20 17:30:29.749 - Request: PUT France Paris
-2024-07-20 17:30:29.751 - Response: Put successful
-2024-07-20 17:30:32.198 - Request: GET France
-2024-07-20 17:30:32.200 - Response: Paris
-2024-07-20 17:30:35.792 - Request: GET France
-2024-07-20 17:30:35.795 - Response: Paris
-2024-07-20 17:30:39.548 - Request: DELETE France
-2024-07-20 17:30:39.553 - Response: Delete successful
-2024-07-20 17:30:46.074 - Request: GET France
-2024-07-20 17:30:46.079 - Response: Key not found!
-2024-07-20 17:30:55.916 - Request: GET England
-2024-07-20 17:30:55.922 - Response: London
-2024-07-20 17:31:01.185 - Request: PUT England Manchester
-2024-07-20 17:31:01.187 - Response: Put successful
-2024-07-20 17:31:04.411 - Request: GET England
-2024-07-20 17:31:04.418 - Response: Manchester
-2024-07-20 17:31:08.736 - Request: DELETE England
-2024-07-20 17:31:08.738 - Response: Delete successful
-2024-07-20 17:31:13.189 - Request: GET England
-2024-07-20 17:31:13.196 - Response: Key not found!
-2024-07-20 17:31:16.541 - Request: GET Greece
-2024-07-20 17:31:16.543 - Response: Athens
-2024-07-20 17:31:23.901 - Request: PUT Greece Ath
-2024-07-20 17:31:23.907 - Response: Put successful
-2024-07-20 17:31:27.620 - Request: GET Greece
-2024-07-20 17:31:27.628 - Response: Ath
-2024-07-20 17:31:49.787 - Request: DELETE Greece
-2024-07-20 17:31:49.794 - Response: Delete successful
-2024-07-20 17:31:54.331 - Request: GET Greece
-2024-07-20 17:31:54.333 - Response: Key not found!
-2024-07-20 17:31:58.012 - Request: GET Greece
-2024-07-20 17:31:58.017 - Response: Key not found!
-2024-07-20 17:32:01.160 - Client is shutting down. Press Ctrl^C.
-2024-07-20 17:32:04.501 - Client is shutting down. Press Ctrl^C.
+2024-08-08 18:49:01.800 - Connected to RMI server at localhost:1234
+2024-08-08 18:49:01.811 - Connected to RMI server at localhost:1235
+2024-08-08 18:49:01.814 - Connected to RMI server at localhost:1236
+2024-08-08 18:49:01.816 - Connected to RMI server at localhost:1237
+2024-08-08 18:49:12.872 - Request: GET Usa
+2024-08-08 18:49:12.884 - Response: Nyc
+2024-08-08 18:49:21.743 - Connected to RMI server at localhost:1234
+2024-08-08 18:49:21.753 - Connected to RMI server at localhost:1235
+2024-08-08 18:49:21.755 - Connected to RMI server at localhost:1236
+2024-08-08 18:49:21.763 - Connected to RMI server at localhost:1237
+2024-08-08 18:49:25.024 - Request: GET Usa
+2024-08-08 18:49:25.030 - Response: Nyc
+2024-08-08 18:49:31.741 - Request: PUT Usa SF
+2024-08-08 18:49:31.749 - Response: Put successful
+2024-08-08 18:49:34.512 - Request: GET Usa
+2024-08-08 18:49:34.515 - Response: SF
+2024-08-08 18:49:38.192 - Request: GET Usa
+2024-08-08 18:49:38.198 - Response: SF
+2024-08-08 18:49:43.143 - Request: DELETE Usa
+2024-08-08 18:49:43.154 - Response: Delete successful
+2024-08-08 18:49:46.609 - Request: DELETE Usa
+2024-08-08 18:49:46.612 - Response: Key not found!
+2024-08-08 18:49:52.362 - Request: GET Usa
+2024-08-08 18:49:52.364 - Response: Key not found!
+2024-08-08 18:49:55.993 - Request: GET India
+2024-08-08 18:49:55.996 - Response: Delhi
+2024-08-08 18:50:03.138 - Request: PUT India Mumai
+2024-08-08 18:50:03.143 - Response: Put successful
+2024-08-08 18:50:09.961 - Request: PUT India Mumbai
+2024-08-08 18:50:09.963 - Response: Put successful
+2024-08-08 18:50:15.619 - Request: GET India
+2024-08-08 18:50:15.626 - Response: Mumbai
+2024-08-08 18:50:19.071 - Request: DELETE India
+2024-08-08 18:50:19.076 - Response: Delete successful
+2024-08-08 18:50:22.424 - Request: GET India
+2024-08-08 18:50:22.428 - Response: Key not found!
+2024-08-08 18:50:26.541 - Request: GET Aus
+2024-08-08 18:50:26.543 - Response: Key not found!
+2024-08-08 18:50:30.861 - Request: PUT Aus Sydney
+2024-08-08 18:50:30.863 - Response: Put successful
+2024-08-08 18:50:33.940 - Request: GET Aus
+2024-08-08 18:50:33.947 - Response: Sydney
+2024-08-08 18:50:37.911 - Request: DELETE Aus
+2024-08-08 18:50:37.913 - Response: Delete successful
+2024-08-08 18:50:40.324 - Request: GET Aus
+2024-08-08 18:50:40.326 - Response: Key not found!
+2024-08-08 18:50:45.168 - Request: GET Greece
+2024-08-08 18:50:45.170 - Response: Athens
+2024-08-08 18:50:51.882 - Request: PUT Greece Cr
+2024-08-08 18:50:51.885 - Response: Put successful
+2024-08-08 18:50:55.824 - Request: GET Greece
+2024-08-08 18:50:55.834 - Response: Cr
+2024-08-08 18:51:01.756 - Request: PUT Greece Athens
+2024-08-08 18:51:01.759 - Response: Put successful
+2024-08-08 18:51:04.363 - Request: GET Greece
+2024-08-08 18:51:04.365 - Response: Athens
+2024-08-08 18:51:07.908 - Request: GET Greece
+2024-08-08 18:51:07.913 - Response: Athens
+2024-08-08 18:51:16.631 - Request: PUT Usa SJ
+2024-08-08 18:51:16.639 - Response: Put successful
+2024-08-08 18:51:19.301 - Request: GET Usa
+2024-08-08 18:51:19.307 - Response: SJ
+2024-08-08 18:51:22.310 - Request: GET Usa
+2024-08-08 18:51:22.315 - Response: SJ

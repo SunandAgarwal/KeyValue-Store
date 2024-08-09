@@ -1,38 +1,39 @@
 Assignment Overview:
-The purpose of this assignment is to implement a robust client-server application capable of handling
+The purpose of this assignment is to implement a fault-tolerant client-server application capable of handling
 RMI connections. The assignment aims to implement a multi-threaded key-value store server that
 can process GET, PUT, and DELETE commands from clients over Java RMI.
-The client application should be resilient to server failures and unresponsiveness, utilizing a
-timeout mechanism to handle such scenarios gracefully and alerting the user. Additionally, the client should log all
+The client application should be resilient to server failures and unresponsiveness, utilizing the Paxos consensus algorithm
+instead of the previously used two-phase commit protocol. Additionally, the client should log all
 server timeout incidents with precise timestamps to facilitate troubleshooting.
 From what I understand, the scope of the assignment involves designing and implementing multi-threaded
 server capabilities. Emphasis is placed on ensuring robust communication, error handling, and
-logging mechanisms to create a reliable and maintainable distributed system. The server should be
-able to handle requests from multiple clients simultaneously, thereby handling mutual exclusion
-as well. The server is using thread pools to handle these concurrent requests and maintain
-consistency using the ConcurrentHashMap. Implementing the 2 phase protocol for the PUT and
-DELETE operations ensures consistency among the multiple instances of server and client.
+logging mechanisms to create a reliable and maintainable distributed system. The server is now part of a replicated system
+where multiple instances work together to maintain a consistent state using Paxos. The server is
+using thread pools to handle these concurrent requests and maintain
+consistency using the ConcurrentHashMap. In this project, the implementation of Paxos allows the
+key-value store to achieve consensus across multiple replicas, even when some of the replicas face
+failures. Additionally, acceptor threads are configured to fail and restart at random intervals to
+simulate real-world server fickleness, showcasing the resilience of the Paxos protocol in
+maintaining system integrity.
 
 Technical Impression:
 Working on this assignment provided a comprehensive understanding of the complexities involved
-in developing robust client-server applications using Java RMI. In the previous project, a single
-instance of the Key value store server was used. Now, this server needs to be scaled up such that
-there are 5 replicas so that clients can request any of these server instances for the operations.
-This increases server bandwidth and availability as well.
+in developing robust client-server applications using Java RMI. This project builds upon the previous implementation
+and introduces Paxos to ensure consistency and reliability across those replicas despite potential failures.
 
-One of the challenges was ensuring consistency was maintained when the clients can contact any of
-the 5 replicas of the server. This was implemented through a 2 phase commit protocol for the
-PUT and DELETE operations on the server instances, where these instances are assumed to not fail.
-When a client issues a PUT or DELETE operation to any server replica, the receiving replica ensures
-that the updates have been received by all replicas (via ACKs) and committed.
+One of the main challenges was implementing the Paxos algorithm to maintain consistency when
+clients could contact any of the five server replicas. Paxos ensures that even if some replicas
+fail or restart randomly, the system as a whole remains consistent and operational. This was a
+significant advancement from the two-phase commit protocol previously used, as Paxos offers better
+fault tolerance and ensures that the system can continue operating correctly even with partial failures.
 
 This process also involved thorough logging mechanisms to understand the complete flow of requests and
 responses made by clients, even though they may not be in the same order because of different
 threads. Exception handling was also implemented so that the server or the client do not crash
 and exit gracefully when errored.
 
-A practical use case for this client-server application would be in a distributed caching system,
-where the server acts as a cache store for frequently accessed data, and multiple clients
-such as web applications may read and update the cache concurrently.
-This system can significantly improve performance and reduce the load on a central database by distributing data storage and
-retrieval operations.
+A practical use case for this distributed, fault-tolerant client-server application could be in a
+distributed database system, where multiple nodes work together to store and retrieve data reliably.
+Such a system would be highly resilient to individual node failures and could handle large-scale
+operations from numerous clients simultaneously, improving performance, availability, and fault
+tolerance in a distributed computing environment.

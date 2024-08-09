@@ -3,60 +3,44 @@ package server;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+/**
+ * The KVStoreInt interface defines the remote methods that can be invoked by a client on the key-value store server.
+ * These methods include operations for storing, retrieving, and deleting key-value pairs, as well as handling commands and transactions.
+ */
 public interface KVStoreInt extends Remote {
+
   /**
-   * Store a key value pair in the map.
-   *
-   * @param key   The key of the map
-   * @param value The value of the key
-   * @return Output message
+   * Puts a key-value pair into the store.
    */
   String put(String key, String value) throws RemoteException;
 
   /**
-   * Get the value corresponding to a key in the map
-   *
-   * @param key The key in the map
-   * @return The value of the key
+   * Gets the value associated with a key from the store.
    */
   String get(String key) throws RemoteException;
 
   /**
-   * Delete the key from the map.
-   *
-   * @param key The key in the map
-   * @return Output message
+   * Deletes a key-value pair from the store.
    */
   String delete(String key) throws RemoteException;
 
   /**
-   * Generate response based on input commands.
-   *
-   * @param command The input command
-   * @return The response
+   * Handles a command by parsing it and invoking the corresponding method.
    */
   String handleCommand(String command) throws RemoteException;
 
   /**
-   * Prepare the transaction.
-   *
-   * @param id      The transaction id
-   * @param command The input command
-   * @return Whether transaction is prepared or not
+   * Prepares a transaction by logging its state and handling the command.
    */
   boolean prepare(String id, String command) throws RemoteException;
 
   /**
-   * Commit the transaction.
-   *
-   * @param id The transaction id
+   * Commits a transaction by changing its state to "Committed".
    */
   void commit(String id) throws RemoteException;
 
   /**
-   * Abort the transaction.
-   *
-   * @param id The transaction id
+   * Aborts a transaction by changing its state to "Aborted".
    */
   void abort(String id) throws RemoteException;
 }
